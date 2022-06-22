@@ -1,5 +1,5 @@
 {
-  "name": "@opensom/eslint-config",
+  "name": "eslint-config-silash35",
   "version": "0.0.1",
   "main": ".eslintrc.js",
   "license": "Unlicense",
