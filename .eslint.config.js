@@ -31,6 +31,20 @@ module.exports = {
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@next/next/no-img-element": "off",
+    "react/function-component-definition": [
+      "error",
+      {
+        namedComponents: "arrow-function",
+        unnamedComponents: "arrow-function",
+      },
+    ],
+    "react/jsx-sort-props": [
+      "error",
+      {
+        shorthandLast: true,
+        multiline: "first",
+      },
+    ],
   },
   settings: {
     react: {

@@ -5,6 +5,8 @@ module.exports = {
   semi: true,
   singleQuote: false,
 
+  plugins: ["prettier-plugin-css-order"],
+
   overrides: [
     {
       files: ["_document.js"],
