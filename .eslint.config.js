@@ -1,8 +1,8 @@
-module.exports = {
+export default {
   env: {
     browser: true,
     node: true,
-    es2021: true,
+    es2024: true,
   },
   ignorePatterns: ["node_modules", ".next", ".dist"],
   parserOptions: {

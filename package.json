@@ -1,19 +1,24 @@
 {
   "name": "eslint-config-silash35",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "main": ".eslint.config.js",
   "license": "Unlicense",
+  "type": "module",
+  "engines": {
+    "node": "^20.10.0",
+    "pnpm": "^8.12.1"
+  },
   "dependencies": {
-    "@next/eslint-plugin-next": "^13.4.9",
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
-    "eslint": "^8.44.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "eslint-plugin-react": "^7.32.2",
+    "@next/eslint-plugin-next": "^14.0.4",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.1",
+    "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-simple-import-sort": "^10.0.0",
-    "prettier": "^3.0.0",
-    "prettier-plugin-css-order": "^1.3.1",
-    "typescript": "^5.1.6"
+    "prettier": "^3.1.1",
+    "prettier-plugin-css-order": "^2.0.1",
+    "typescript": "^5.3.3"
   }
 }
