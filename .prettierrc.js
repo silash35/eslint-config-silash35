@@ -1,3 +1,5 @@
+/** @type {import("prettier").Config} */
+
 export default {
   tabWidth: 2,
   useTabs: false,
@@ -5,7 +7,8 @@ export default {
   semi: true,
   singleQuote: false,
 
-  plugins: ["prettier-plugin-css-order"],
+  plugins: ["prettier-plugin-css-order", "prettier-plugin-tailwindcss"],
+  tailwindFunctions: ["tv"],
 
   overrides: [
     {
