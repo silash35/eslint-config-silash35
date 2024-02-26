@@ -20,6 +20,7 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:prettier/recommended",
     "plugin:@next/next/recommended",
+    "plugin:@tanstack/eslint-plugin-query/recommended",
   ],
   rules: {
     "simple-import-sort/imports": "error",
