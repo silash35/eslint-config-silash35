@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-silash35",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "main": "eslint.config.js",
   "license": "Unlicense",
   "type": "module",
