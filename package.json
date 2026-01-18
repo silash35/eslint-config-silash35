@@ -1,8 +1,19 @@
 {
   "name": "eslint-config-silash35",
+  "description": "My custom ESLint and Prettier configs",
+  "author": "Silas Henrique <silash35@gmail.com> (https://silas.eng.br/)",
   "version": "5.0.0",
   "main": "eslint.config.js",
   "license": "Unlicense",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silash35/eslint-config-silash35.git"
+  },
+  "keywords": [
+    "eslint",
+    "typescript",
+    "prettier"
+  ],
   "type": "module",
   "packageManager": "pnpm@10.28.0",
   "engines": {
