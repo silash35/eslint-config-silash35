@@ -1,11 +1,15 @@
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 
-export default {
-  plugins: {
-    "simple-import-sort": simpleImportSort,
+const simpleImportSortConfig = [
+  {
+    plugins: {
+      "simple-import-sort": simpleImportSort,
+    },
+    rules: {
+      "simple-import-sort/imports": "error",
+      "simple-import-sort/exports": "error",
+    },
   },
-  rules: {
-    "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error",
-  },
-};
+];
+
+export default simpleImportSortConfig;

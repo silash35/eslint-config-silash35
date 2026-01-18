@@ -1,33 +1,26 @@
 import eslint from "@eslint/js";
-import prettierConfig from "eslint-config-prettier";
-import globals from "globals";
+import { defineConfig, globalIgnores } from "eslint/config";
+import prettier from "eslint-config-prettier/flat";
 import tseslint from "typescript-eslint";
 
 import nextConfig from "./configs/next.js";
+import queryConfig from "./configs/query.js";
 import reactConfig from "./configs/react.js";
-import reactQueryConfig from "./configs/react-query.js";
 import simpleImportSortConfig from "./configs/simple-import-sort.js";
 
-export default [
-  {
-    ignores: ["**/node_modules/", "**/.next/", "**/.dist/", ".git/"],
-  },
+export default defineConfig([
   eslint.configs.recommended,
-  ...tseslint.configs.strict,
+  tseslint.configs.strict,
+  tseslint.configs.stylistic,
   ...reactConfig,
+  ...queryConfig,
   ...nextConfig,
-  reactQueryConfig,
-  simpleImportSortConfig,
-  prettierConfig,
+  ...simpleImportSortConfig,
+  prettier,
   {
-    languageOptions: {
-      globals: {
-        ...globals.browser,
-        ...globals.node,
-      },
-    },
     rules: {
       "spaced-comment": "error",
     },
   },
-];
+  globalIgnores(["node_modules/", ".next/", "out/", "build/", "next-env.d.ts", "dist/", ".git/"]),
+]);

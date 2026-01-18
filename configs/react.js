@@ -1,8 +1,4 @@
-import { fixupConfigRules } from "@eslint/compat";
-import reactRecommended from "eslint-plugin-react/configs/recommended.js";
-
-export default [
-  ...fixupConfigRules(reactRecommended),
+const reactConfig = [
   {
     rules: {
       "react/prop-types": "error",
@@ -30,3 +26,5 @@ export default [
     },
   },
 ];
+
+export default reactConfig;

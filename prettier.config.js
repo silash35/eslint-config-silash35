@@ -1,6 +1,6 @@
 /** @type {import("prettier").Config} */
 
-export default {
+const prettierConfig = {
   printWidth: 100,
 
   plugins: ["prettier-plugin-css-order", "prettier-plugin-tailwindcss"],
@@ -13,3 +13,5 @@ export default {
     },
   ],
 };
+
+export default prettierConfig;

@@ -1,10 +1,9 @@
-import { fixupConfigRules } from "@eslint/compat";
-import { FlatCompat } from "@eslint/eslintrc";
+import nextVitals from "eslint-config-next/core-web-vitals";
+import nextTs from "eslint-config-next/typescript";
 
-const compat = new FlatCompat();
-
-export default [
-  ...fixupConfigRules(compat.extends("plugin:@next/next/core-web-vitals")),
+const nextConfig = [
+  ...nextVitals,
+  ...nextTs,
   {
     rules: {
       "@next/next/no-img-element": "off",
@@ -12,3 +11,5 @@ export default [
     },
   },
 ];
+
+export default nextConfig;
